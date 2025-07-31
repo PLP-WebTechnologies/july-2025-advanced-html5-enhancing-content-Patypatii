@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      margin-bottom: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to HTML5 Showcase</h1>
+    <p>This page demonstrates advanced HTML5 content and form features.</p>
+  </header>
+
+  <main>
+
+    <!--Lists Section -->
+    <section>
+      <h2>My Top 3 Learning Resources</h2>
+      <ol>
+        <li>MDN Web Docs</li>
+        <li>freeCodeCamp</li>
+        <li>W3Schools</li>
+      </ol>
+
+      <h3>Key HTML5 Features:</h3>
+      <ul>
+        <li>Semantic elements</li>
+        <li>Form enhancements</li>
+        <li>Built-in validation</li>
+      </ul>
+    </section>
+
+    <!--Table Section -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Resources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML Basics</td>
+            <td>Videos, Articles</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Forms & Validation</td>
+            <td>Code Examples</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Multimedia & Tables</td>
+            <td>Exercises</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Media Section -->
+    <section>
+      <h2>Featured Video Tutorial</h2>
+      <video controls width="500" autoplay muted>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Audio Resource</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!--Form Section -->
+    <section>
+      <h2>Contact & Feedback Form</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Feedback</legend>
+
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- Select Topic --</option>
+            <option value="html">HTML5</option>
+            <option value="css">CSS3</option>
+            <option value="js">JavaScript</option>
+          </select>
+
+          <label for="rating">Rate your experience (1 to 5):</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" required />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="subscribe" checked readonly />
+            Subscribe to our newsletter
+          </label>
+
+          <label for="date">Date of Visit:</label>
+          <input type="date" id="date" name="date" required />
+
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment by Patrick Wambugu</p>
+  </footer>
+
+</body>
+</html>
